@@ -1,0 +1,258 @@
+/* Customize TableView */
+.table-view {
+    -fx-background-color: white; /* Background color */
+    -fx-border-color:white;
+    -fx-background-radius: 10px; /* Rounded corners */
+}
+
+/* Header row */
+.table-view .column-header {
+    -fx-background-color: rgba(255, 165, 0, 0.5); /* Transparent orange background color */
+    -fx-background-radius: 20px; /* Background radius for circular borders */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 1); /* Inner shadow effect */
+}
+/* Customize column header area */
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #FFDAB9, #FFA500); /* Gradient background */
+    -fx-background-radius: 10px; /* Background radius for rounded corners */
+    -fx-padding: 5px; /* Padding */
+    -fx-background-size: cover; /* Cover the entire area */
+}
+
+
+/* Header text */
+/* Header text */
+.table-view .column-header > .label {
+    -fx-font-family: "Segoe Print"; /* Use Segoe Print font */
+    -fx-text-fill: black; /* Header text color */
+    -fx-font-weight: bold; /* Header text font weight */
+    -fx-background-color: linear-gradient(to bottom, #FFA500, #FF8C00); /* Gradient background color */
+    -fx-border-color: #FFA500; /* Border color */
+    -fx-border-width: 0px 1px 1px 0px; /* Border width (top, right, bottom, left) */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-background-radius: 5px; /* Background radius */
+    -fx-border-width: 0px;
+}
+
+/* Cell text */
+.table-cell {
+    -fx-text-fill: #000000; /* Cell text color */
+}
+
+/* Selected row */
+.table-row-cell:selected {
+    -fx-background-color: #FF6347; /* Selected row background color */
+}
+
+/* Hover effect */
+.table-row-cell:hover {
+    -fx-background-color: #FFB6C1; /* Hovered row background color */
+}
+
+/* Focused row */
+.table-row-cell:focused {
+    -fx-background-color: #FF8C00; /* Focused row background color */
+}
+
+/* Selected cell */
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #FFFFFF; /* Selected cell text color */
+}
+
+/* Focused cell */
+.table-row-cell:focused .table-cell {
+    -fx-background-color: #FFA500; /* Focused cell background color */
+}
+
+/* Odd and even row striping */
+.table-row-cell:odd {
+    -fx-background-color: #FFE4B5; /* Odd row background color */
+}
+
+.table-row-cell:even {
+    -fx-background-color: #FFDAB9; /* Even row background color */
+}
+
+/* Borders */
+.table-view {
+    -fx-border-color: #FF4500; /* Border color */
+    -fx-border-width: 1px; /* Border width */
+        -fx-background-radius: 10px; /* Background radius */
+        -fx-border-width:0px;
+            -fx-font-family: "Segoe Print"; /* Use Segoe Print font */
+
+
+}
+
+/* Vertical scrollbar */
+/* Vertical scrollbar */
+.table-view .scroll-bar:vertical {
+    -fx-background-color: linear-gradient(to bottom, #FFA07A, #FF8C00); /* Vertical scrollbar gradient background */
+    -fx-background-insets: 0, 1, 2; /* Define background insets for the scrollbar */
+    -fx-background-radius: 5px; /* Rounded corners for the scrollbar */
+}
+
+/* Horizontal scrollbar */
+.table-view .scroll-bar:horizontal {
+    -fx-background-color: linear-gradient(to right, #FFA07A, #FF8C00); /* Horizontal scrollbar gradient background */
+    -fx-background-insets: 0, 1, 2; /* Define background insets for the scrollbar */
+    -fx-background-radius: 5px; /* Rounded corners for the scrollbar */
+}
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: darkorange; /* Vertical scrollbar thumb color */
+}
+
+/* Horizontal scrollbar thumb */
+.table-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: darkorange; /* Horizontal scrollbar thumb color */
+}
+
+/* Column resize cursor */
+.table-view .column-header .resize-line {
+    -fx-cursor: resize; /* Cursor type for column resize */
+}
+
+.scroll-pane {
+    -fx-background-color: white; /* Background color */
+}
+
+/* Vertical scrollbar */
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: white; /* Transparent background */
+}
+
+/* Vertical scrollbar track */
+.scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: white; /* Transparent background */
+}
+
+/* Vertical scrollbar thumb */
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: darkorange; /* Scrollbar thumb color */
+    -fx-background-insets: 0, 1, 2; /* Define background insets for the scrollbar */
+    -fx-background-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+
+/* Horizontal scrollbar */
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: white; /* Transparent background */
+}
+
+/* Horizontal scrollbar track */
+.scroll-pane .scroll-bar:horizontal .track {
+    -fx-background-color: white; /* Transparent background */
+}
+
+/* Horizontal scrollbar thumb */
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-color: darkorange; /* Scrollbar thumb color */
+    -fx-background-insets: 0, 1, 2; /* Define background insets for the scrollbar */
+    -fx-background-radius: 5px; /* Rounded corners for the scrollbar thumb */
+}
+.button {
+    -fx-background-color: rgba(251, 80, 1);
+    -fx-background-radius: 50px; /* Rounded corners for the scrollbar thumb */
+     -fx-border-radius: 50px; /* Rounded corners for the scrollbar thumb */
+    -fx-border-color: rgba(255, 140, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255, 1);
+    -fx-font-size: 13px;
+    -fx-font-family: 'Trebuchet MS';
+}
+
+.button:hover {
+    -fx-background-color: rgba(226, 72, 1, 1);
+    -fx-border-color: rgba(255, 140, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+.button:pressed {
+    -fx-background-color: rgba(176, 56, 1, 1);
+    -fx-border-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+.button:hover:pressed {
+    -fx-background-color: rgba(176, 56, 1, 1);
+    -fx-border-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: rgba(255, 255, 255, 1);
+}
+
+.vbox-center {
+    -fx-alignment: center;
+    -fx-spacing: 15;
+}
+.hbox-center {
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+.gridpane-center {
+    -fx-alignment: center;
+    -fx-hgap: 10;
+    -fx-vgap: 20;
+}
+.combo-box {
+    -fx-background-color: rgba(251, 80, 1);
+    -fx-border-color: rgba(255, 140, 0, 0);
+    -fx-text-fill: white; /* Set text color to white */
+    -fx-font-size: 13;
+    -fx-font-family: 'Trebuchet MS';
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-min-width: 180px; /* Set the minimum width */
+    -fx-pref-width: 180px; /* Set the preferred width */
+    -fx-max-width: 180px; /* Set the maximum width */
+    -fx-min-height: 30px; /* Set the minimum height */
+    -fx-pref-height: 30px; /* Set the preferred height */
+    -fx-max-height: 30px; /* Set the maximum height */
+    -fx-padding: 5px 5px; /* Adjust padding as needed */
+
+    -fx-alignment: center; /* Center text horizontally and vertically */
+}
+
+/* Define the style on mouse hover */
+.combo-box:hover {
+    -fx-background-color: rgba(226, 72, 1, 1);
+}
+
+/* Define the style on mouse click */
+.combo-box:pressed {
+    -fx-background-color: rgba(176, 56, 1, 1);
+}
+
+/* Define the style on mouse exit */
+.combo-box:hover:disabled {
+    -fx-background-color: rgba(251, 80, 1);
+}
+
+/* Prompt text */
+.combo-box .text {
+    -fx-fill: derive(-fx-text-fill, -30%);
+}
+.tab-pane {
+    -fx-background-color: #f9f9f9; /* Background color of the TabPane */
+}
+
+.tab-header-area {
+    -fx-background-color: #ff6600; /* Background color of the Tab headers */
+}
+
+.tab {
+    -fx-background-color: #ff6600; /* Background color of the Tabs */
+    -fx-background-insets: 0 1 0 1; /* Padding for the Tabs */
+    -fx-padding: 0.5em 1em 0.5em 1em; /* Padding for the Tab content */
+    -fx-text-fill: white; /* Text color of the Tab titles */
+    -fx-font-weight: bold; /* Bold font for the Tab titles */
+    -fx-min-height: 1.5em; /* Minimum height of the Tabs */
+}
+
+.tab:selected {
+    -fx-background-color: #ff9933; /* Background color of the selected Tab */
+}
+
+.tab:hover {
+    -fx-background-color: #ff9933; /* Background color of the hovered Tab */
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: white; /* Text color of the selected Tab title */
+}
